@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowCare</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="cabecalho__menu">  
+     <nav>
+        <h1 class="logo">GlowCare<strong class="brilho__destaque"> ★</strong></h1>
+    </nav>
+    </header>
+    <main class="conteudo">
+        <img class="apresentacao__imagem" src="Glow/assets/imagem-base.jpeg" alt="Imagem de cuidados com a pele">
+        <section class="apresentacao">
+            <h2 class="apresentacao__subtitulo"> Dicas Para Você!</h2>
+            <p class="apresentacao__texto">Descubra dicas e cuidados para manter sua pele radiante e saudável e com um Glow que <strong class="texto__destaque">você</strong> nem imaginaria!.</p>
+            <h2 class="apresentacao__subtitulo"> Tipos de pele</h2>
+            <p>Qual é o seu tipo de pele? Clique no tipo de pele para descobrir os cuidados específicos para cada um deles! </p>
+        <div class="apresentacao__link">
+            <a class="apresentacao__link__botao" href="pele.html#oleosa">Pele Oleosa</a>
+            <a class="apresentacao__link__botao" href="pele.html#seca">Pele Seca</a>
+            <a class="apresentacao__link__botao" href="pele.html#mista">Pele Mista</a>
+            <a class="apresentacao__link__botao" href="pele.html#normal">Pele Normal</a>
+       </div>
+           <h2>Dicas Extras</h2>
+           <p class="apresentacao__texto">Além dos cuidados básicos, aqui estão algumas     dicas extras para manter sua pele saudável e radiante:</p>                  
+        <ul class="apresentacao__lista">
+                <li class="apresentacao__lista__item">Evite o uso excessivo de produtos agressivos, como esfoliantes fortes, que podem irritar a pele.</li>
+                <li class="apresentacao__lista__item">Use protetor solar diariamente, mesmo em dias nublados, para proteger sua pele dos danos causados pelos raios UV.</li>
+                <li class="apresentacao__lista__item">Mantenha uma dieta equilibrada, rica em frutas, vegetais e água, para nutrir sua pele de dentro para fora.</li>
+                <li class="apresentacao__lista__item">Evite fumar e limitar o consumo de álcool, pois ambos podem prejudicar a saúde da pele.</li>
+                <li class="apresentacao__lista__item">Durma o suficiente para permitir que sua pele se recupere e se regenere durante a noite.</li>
+            </ul>
+       </section>
+       <section class="ia-section">
+            <h2 class="apresentacao__subtitulo">Quiz rápido de pele</h2>
+            <p class="apresentacao__texto">Responda 3 perguntas para receber uma sugestão simples de cuidado para sua pele.</p>
+            <form id="ia-form" class="ia-form">
+                <div class="ia-grid">
+                    <div class="ia-question">
+                        <label>1. Sua pele fica oleosa no final do dia?</label>
+                        <select name="q1">
+                            <option value="">Escolha</option>
+                            <option value="oleosa">Sim, muito oleosa</option>
+                            <option value="seca">Não, fica seca</option>
+                            <option value="mista">Apenas na zona T</option>
+                            <option value="normal">Quase sempre equilibrada</option>
+                        </select>
+                    </div>
+                    <div class="ia-question">
+                        <label>2. Você costuma ter acne ou cravos?</label>
+                        <select name="q2">
+                            <option value="">Escolha</option>
+                            <option value="sim">Sim</option>
+                            <option value="às vezes">Às vezes</option>
+                            <option value="nao">Não</option>
+                        </select>
+                    </div>
+                    <div class="ia-question">
+                        <label>3. Qual é seu foco agora?</label>
+                        <select name="q3">
+                            <option value="">Escolha</option>
+                            <option value="hidratação">Hidratação</option>
+                            <option value="oleosidade">Controle de oleosidade</option>
+                            <option value="antiidade">Anti-idade</option>
+                            <option value="sensibilidade">Sensibilidade</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="apresentacao__link__botao">Ver Resultado</button>
+            </form>
+            <div id="ia-result" class="ia-result"></div>
+       </section>
+    </main>
+    <footer></footer>
+</body>
